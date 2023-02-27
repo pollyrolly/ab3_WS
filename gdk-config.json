@@ -1,0 +1,22 @@
+{
+  "component": {
+    "aws.greengrass.labs.LocalWebServer": {
+      "author": "Amazon",
+      "version": "NEXT_PATCH",
+      "build": {
+        "build_system": "custom",
+        "custom_build_command": [
+          "bash",
+          "build-custom.sh",
+          "aws.greengrass.labs.LocalWebServer",
+          "NEXT_PATCH"
+        ]
+      },
+      "publish": {
+        "bucket": "ab3-greengrass-eu-central-1-artifacts",
+        "region": "eu-central-1"
+      }
+    }
+  },
+  "gdk_version": "1.0.0"
+}
